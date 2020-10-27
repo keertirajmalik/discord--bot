@@ -4,14 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "start": "node ./src/bot,js",
-    "dev":"nodemon ./src/bot.js"
+    "test": "jest",
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "youtube-dl": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.3"
   }
 }
